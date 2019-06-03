@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@drawable/login_bg"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/login_img_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="220dp"
+        android:src="@drawable/user" />
+
+    <EditText
+        android:id="@+id/login_edt_userName"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/login_img_userName"
+        android:layout_alignTop="@+id/login_img_userName"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/login_img_userName"
+        android:background="@drawable/shape_login_edit"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/login_img_passWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_img_userName"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/password" />
+
+    <EditText
+        android:id="@+id/login_edt_passWord"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/login_img_passWord"
+        android:layout_alignTop="@+id/login_img_passWord"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/login_img_passWord"
+        android:background="@drawable/shape_login_edit"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_img_passWord"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="#02aafd"
+        android:text="登录" />
+
+    <TextView
+        android:id="@+id/login_tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="注册用户"
+        android:textColor="#02aafd" />
+
+    <TextView
+        android:id="@+id/login_tv_forgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:text="忘记密码"
+        android:textColor="#02aafd" />
+
+</RelativeLayout>
